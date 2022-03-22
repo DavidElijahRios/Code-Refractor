@@ -1,3 +1,4 @@
+/* TODO Need to consolidate and organize css properties to be more clean and follow semantic html element structure on html file*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -24,6 +25,7 @@ body {
     color: #d9dcd6;
 }
 /*Needed to change the class selector from div from all the .header selectors that contained div, into nav, for CSS properties to apply to the change from div tag to nav in html file*/
+
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,25 +33,18 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header nav ul {
-    list-style-type: none;
-}
-
+/*Removed .header nav ul selector and added it property to .header nav li to consolidate code*/
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    list-style-type: none;
 }
 
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
-p {
-    font-size: 16px;
-}
-
+/*moved location of .hero selector to match that of semantic format*/
 .hero {
     height: 800px;
     width: 100%;
@@ -57,82 +52,28 @@ p {
     background-size: cover;
     background-position: center;
 }
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/*Moved location ot .content selector to match that of semantic format*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
+p {
+    font-size: 16px;
+}
+/*.float left is being used for search engine optimization and social media marketing images*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*.float right is being used for online reputation management*/
+.float-right {
     float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    margin-left: 25px;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
+/*TODO this where I left off need to consolidate the rest of CSS page*/
+/*moved current selectors from 75-127 from where they originally were to lines 75-127 and reorganized them to match the semantic format on HTML*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -185,6 +126,30 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+/*Consolidated lines 87 - 115 of class selectors (.benefit-lead,.benefit-brand,.benefit-cost, and the same selectors with h3 tags with them) into a new selector under the section tag in HTML*/
+/*This section and section img tag is for manipulation of the 2nd section of HTML page*/
+section {
+    margin-bottom: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*and also Consolidated .benefit-lead img, .benefit-brand img,.benefit-cost selectors under the new section img tag selector*/
+section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
 
 .footer {
