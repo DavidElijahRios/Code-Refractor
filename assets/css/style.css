@@ -1,4 +1,4 @@
-/* TODO Need to consolidate and organize css properties to be more clean and follow semantic html element structure on html file*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -72,9 +72,9 @@ p {
     float: right;
     margin-left: 25px;
 }
-/*TODO this where I left off need to consolidate the rest of CSS page*/
+
 /*moved current selectors from 75-127 from where they originally were to lines 75-127 and reorganized them to match the semantic format on HTML*/
-.search-engine-optimization {
+.article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -82,71 +82,33 @@ p {
     background-color: #0072bb;
     color: #ffffff;
 }
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/*consolidated selectors into article class*/
+.article img {
     max-height: 200px;
 }
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/*consolidated selectors into article class*/
+.article h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/*Consolidated lines 87 - 115 of class selectors (.benefit-lead,.benefit-brand,.benefit-cost, and the same selectors with h3 tags with them) into .benefits class selector*/
+/*Fixed padding to match as closely to that of current website (OG was 20px changed it to 55px */
 .benefits {
     margin-right: 20px;
-    padding: 20px;
+    padding: 55px;
     clear: both;
     float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
-}
-/*Consolidated lines 87 - 115 of class selectors (.benefit-lead,.benefit-brand,.benefit-cost, and the same selectors with h3 tags with them) into a new selector under the section tag in HTML*/
-/*This section and section img tag is for manipulation of the 2nd section of HTML page*/
-section {
     margin-bottom: 32px;
     color: #ffffff;
     margin-bottom: 10px;
     text-align: center;
 }
-/*and also Consolidated .benefit-lead img, .benefit-brand img,.benefit-cost selectors under the new section img tag selector*/
-section img {
+/*and also Consolidated .benefit-lead img, .benefit-brand img,.benefit-cost selectors under the .benefits class selector*/
+.benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
