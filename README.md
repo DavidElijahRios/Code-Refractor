@@ -20,8 +20,9 @@ The motivation behind this project was to understand the importance of having ac
 
 ## Usage
 
-    ![alt text](assets/images/code-refractor-hw-image.png)
-    
+    ```md
+    ![alt text] (/assets/images/code-refractor-hw-image.png)
+    ```
 
 ## Credits
 
